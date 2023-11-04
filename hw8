@@ -1,0 +1,11 @@
+def f(a, m):
+    if m==0:
+        m=a.pop()
+    c=a.pop()
+    if c>m:
+        m=c
+    if len(a)!=0:
+        return f(a,m)
+    return m
+s=[1,62,3,4,12]
+print(f(s,0))
