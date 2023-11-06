@@ -1,5 +1,5 @@
-def f(a, m):
-    if m==0:
+def f(a, m=None):
+    if m is None:
         m=a.pop()
     c=a.pop()
     if c>m:
